@@ -46,12 +46,12 @@ class Main extends PluginBase{
             		$sender->sendMessage(TF::RED.TF::BOLD."(!) You must be a player to run this command!");
                     return false;
             	}
-            	if(!is_numeric($args[0]))
+            	if(!is_numeric($args[0]) && isset($args[0])
             	{
             		$sender->sendMessage(TF::RED.TF::BOLD."(!) The amount of blocks must be numeric!");
                     return false;
             	}
-            	if($args[0] <= 0){
+            	if($args[0] <= 0 && isset($args[0]){
             		$sender->sendMessage(TF::RED.TF::BOLD."(!) The amount must be above zero!");
                     return false;
             	}
