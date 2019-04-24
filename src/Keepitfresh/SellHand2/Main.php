@@ -74,15 +74,4 @@ class Main extends PluginBase{
 		}
 		//}
 	}
-
-	//Checks if configs exist
-	public function cfgExists($file)
-	{
-		if(file_exists($file))
-		{
-			return true;
-		}else{
-			return false;
-		}
-	}
 }
